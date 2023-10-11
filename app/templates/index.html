@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page - My Blog</title>
+    </head>
+    <body>
+        <h1>Hello, {{ admin.username }}! </h1>
+        <b> Today is {{ datetime }} </b>
+        
+        {% for user in users %}
+        <p> Name: {{ user }} </p>
+        {% endfor %}
+
+    </body>
+</html>
